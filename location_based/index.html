@@ -9,21 +9,20 @@
     <script src='build/aframe-ar-nft.js'></script>
 	<script>
 
-        AAFRAME.registerComponent("information", {
-   			init: function() {
-   			let toggle = false
-   			this.el.addEventListener("click", (e) => {
-   		  let text = document.querySelectorAll(".clickable")
-   			text.forEach(function(el) {
-   	    el.setAttribute("visible", toggle)
-   			})
-   				 toggle = !toggle
-   			       })
-   			      }
-   		      })
-   	</script>
-
-	</head>
+        AFRAME.registerComponent("text-show", {
+            init: function () {
+                let toggle = false
+                this.el.addEventListener("click", (e) => {
+                    let entity = document.querySelectorAll(".clickable")
+                    entity.forEach(function (el) {
+                        el.setAttribute("visible", toggle)
+                    })
+                    toggle = !toggle
+                })
+            }
+        })
+    </script>
+</head>
 
 
 <body style='margin: 0; overflow: hidden;'>
@@ -34,32 +33,27 @@
 	    
 	     <a-entity id="cameraRig">
             <a-entity id="head" camera wasd-controls look-controls cursor="rayOrigin: mouse" position="0 1.6 0"></a-entity>
-       
+        </a-entity>
 	    
-           <a-assets>
+            <a-assets>
             <a-asset-item id="parthenon" src="./assets/scene.gltf"></a-asset-item>
-           </a-assets>
+        </a-assets>
         
-             
-            <a-entity id="parthenon_model" position="0 0 -180" class="click"
-                      scale="5 5 5"
-                      gltf-model="#parthenon"
-		                  animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;"
-                      gps-entity-place="latitude: 44.506477; longitude: 11.301524;" information>
-            </a-entity>
+             <a-entity position="-6 -2 -6">
+            <a-entity gltf-model="#parthenon" scale="1 1 1" class="click" gps-entity-place="latitude: 37.9715285; longitude: 23.7267166;" text-show>
+             <a-entity class="clickable"
+		       position="3 5.2 0"
+		       rotation="0 30 0"
+		       text="color: #a48111; font-type: bold; align: center; value: Parthenon is in Greece!; width:4; heigh:3; letterSpacing: 10;"
+                          visible="false"></a-entity>
+			     
+			     </a-entity>
             
-       <a-text id="text_info" class="clickable" text="value: Parthenon is in Greece"
-           position="0 0 -90"
-           color= "#F4D35E"
-           scale="7 7 7"
-           visible="false">
-      </a-text>
     
 
         <a-camera
             rotation-reader
-            gps-camera="simulateLatitude: 37.9703; simulateLongitude: 23.7225; minDistance: 1; maxDistance: 700;">
+            gps-camera="simulateLatitude: 37.9715285; simulateLongitude: 23.7267166; minDistance: 1; maxDistance: 700;">
 		</a-camera>
 	</a-scene>
 </body>
-
