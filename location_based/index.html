@@ -40,15 +40,19 @@
            </a-assets>
         
              
-            <a-entity gltf-model="#parthenon" scale="0.5 0.5 0.5" class="click" gps-entity-place="latitude: 37.9703; longitude: 23.7225;" text-show>
-             <a-entity class="clickable"
-		       position="1 1 1"
-		       rotation="0 30 0"
-		       text="color: #a48111; font-type: bold; align: center; value: Hello!; width:4; heigh:3; letterSpacing: 10;"
-                          visible="false"></a-entity>
-			     
-	    </a-entity>
+            <a-entity id="parthenon_model" position="0 0 -180" class="click"
+                      scale="5 5 5"
+                      gltf-model="#parthenon"
+		                  animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;"
+                      gps-entity-place="latitude: 44.506477; longitude: 11.301524;" information>
+            </a-entity>
             
+       <a-text id="text_info" class="clickable" text="value: Parthenon is in Greece"
+           position="0 0 -90"
+           color= "#F4D35E"
+           scale="7 7 7"
+           visible="false">
+      </a-text>
     
 
         <a-camera
