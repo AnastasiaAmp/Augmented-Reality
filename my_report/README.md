@@ -24,8 +24,9 @@
 Για το πρώτο μέρος του τρίτου παραδοτέου έψαξα στο sketch fab για αρχείο gltf του Παρθενώνα. Κατέβασα το ζιπαρισμενο αρχείο και αφπυ το έκανα extract το ανέβασα στα assets του location based. Μετά έψαξα τις συντεταγμένες του Παρθενώνα σε latitude και longitude και τις έβαλα στο gps entity καθώς έβαλα και τις ίδιες συντεταγμένες στο gps camera (simulatelatitude, simulatelongitude).
 Μετά έφτιαξα τον κώδικα μου ώστε να εμφανίζει το μήνυμα με το που πατάς πάνω στο αξιοθέατο. (Για αυτό το παραδοτέο για να εμφανιστεί ο Παρθενώνας πρέπει να τραβήξετε από πάνω αριστερά για να εμφανιστεί στην οθόνη).
 ![This is an image](https://github.com/AnastasiaAmp/Augmented-Reality/blob/main/location_based/assets/diadrastikiaparthenon.png)
-Για το δεύτερο μέρος σαν αξιοθέατο της Σύρου πήρα την πινακοθήκη των Κυκλάδων και αφού κατέβασα μια φωτογραφία της, την ανέβασα στο φάκελο assets του location based και βρήκα τις συντεταγμένες της από το Google maps. Προσάρμοσα τον κώδικα και έβαλα μέσα και την εικόνα για να εμφανιστεί, δυστυχώς όμως δεν μου εμφανιζόταν, αλλά δεν φαινόταν να υπάρχει πρόβλημα ούτε στον κώδικα.
+Για το δεύτερο μέρος σαν αξιοθέατο της Σύρου πήρα την πινακοθήκη των Κυκλάδων και αφού κατέβασα μια φωτογραφία της, την ανέβασα στο φάκελο assets του location based και βρήκα τις συντεταγμένες της από το Google maps. Προσάρμοσα τον κώδικα και έβαλα μέσα και την εικόνα για να εμφανιστεί, δυστυχώς όμως πρέπει να το σύρω για να εμφανιστεί.
 ![This is an image](https://github.com/AnastasiaAmp/Augmented-Reality/blob/main/location_based/assets/didrasrikisyros.png)
+![This is an image](https://github.com/AnastasiaAmp/Augmented-Reality/blob/main/location_based/assets/diadrastikipinakothiki.png)
 
 # Conclusions
 
